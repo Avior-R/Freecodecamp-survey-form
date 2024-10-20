@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Page Title</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+  <div class="container">
+  <header>
+<h1 id="title">Website survey form</h1>
+  <p id="description">Thank you for taking the time to help us improve the platform</p>
+  </header>
+  <form id="survey-form" action="/submit-form" method="POST">
+    <div class="fill-form">
+      <label for="name" id="name-label">Name<input id="name" type="text" class="form-control" placeholder="Enter your name" required />
+      </label>
+      </div>
+    <div class="fill-form">
+<label for="email" id="email-label">Email<input id="email" type="email" class="form-control" placeholder="Enter your email" required />
+</label>
+    </div>
+    <div class="fill-form">
+      <label for="number" id="number-label">Age<input id="number" type="number" class="form-control" min="13" max="120" placeholder="Age" />
+      </label>
+    </div>
+    <div class="fill form"><p>How did you find us?</p>
+    <select id="dropdown">
+      <option value="" class="select-one" disabled selected>(select one)</option>
+      <option value="1">Social Media</option>
+      <option value="2">Friend</option>
+      <option value="3">Ads</option>
+      <option value="4">Online Community</option>
+      <option value="5">Search Engine</option>
+        </select>
+        </div>
+        <div class="fill-form"><p calss="form-p">Would you recommend us to a friend?</p>
+        <label class="inline">
+        <input name="recommend" value="definitely" type="radio" class="radio-input" checked />Definitely
+        </label>
+        <label class="inline">
+        <input name="recommend" value="maybe" type="radio" class="radio-input" />Maybe
+        </label>
+        <label class="inline">
+        <input name="recommend" value="not-sure" type="radio" class="radio-input" />Not sure
+        </label>
+        </div>
+        <div class="form-fill">
+          <p class="form-p">What would you like to see improved?</p>
+          <label for="improve-survey" class="custom-checkbox"><input type ="checkbox" value="performance" name="improve" class="checkbox-input" />Performance
+          </label>
+          <label for="improve-survey" class="custom-checkbox"><input type ="checkbox" value="design-and-layout" name="improve" class="checkbox-input" />Design and layout
+          </label>
+          <label for="improve-survey" class="custom-checkbox"><input type ="checkbox" value="mobile-usability" name="improve" class="checkbox-input" />Mobile usability
+          </label>
+          <label for="improve-survey" class="custom-checkbox"><input type ="checkbox" value="navigation" name="improve" class="checkbox-input" />Navigation
+          </label>
+          <label for="improve-survey" class="custom-checkbox"><input type ="checkbox" value="content-quality" name="improve" class="checkbox-input" />Content quality
+          </label>
+          </div>
+          <div class="form-fill custom-textarea">
+            <p>Do you have any comments or suggestions?</p>
+            <textarea id="bio" name="bio" rows="3" cols="30" placeholder="Enter your comment here..."></textarea>
+              </div>
+              <div class="fill-form">
+                <input id="submit" type="submit" value="Submit" />
+                </div>
+    </form>
+    </div>
+  </body>
